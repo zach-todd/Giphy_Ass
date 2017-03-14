@@ -1,0 +1,13 @@
+body{ background-image: url('../images/back.jpg') ; 
+ }
+#buttons{
+	padding-top:40px;
+}
+
+button{
+	margin: 10px;
+}
+
+#submit{
+	margin:2px;
+}
