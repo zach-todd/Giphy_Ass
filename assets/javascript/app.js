@@ -1,4 +1,4 @@
-
+$(document).ready(function() {
 
 var title = ["Fallout 3","Fallout 4","Fallout New-Vegas", "Skyrim", "Portal", "Destiny","Bioshock"];
 console.log(title);
@@ -12,7 +12,7 @@ for (var i = 0; i < title.length; i++) {
 }
 
 buttongen();
-$(document).ready(function() {
+
 
 $("#submit").on("click", function(){
 $("#images").empty();
@@ -45,7 +45,7 @@ $.ajax({
         });
 
 });
-$(".game").on("click", function(){
+$(document).on("click",".game", function(){
 var game = $(this).attr("data-game");
 
 var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
